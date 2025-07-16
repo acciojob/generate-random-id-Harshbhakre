@@ -1,5 +1,10 @@
 function makeid(l) {
-  // write your code here
+ let result = "";
+	let chars = "ABCDEFGHIJKELMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+	for(let i=0;i<l;i++){
+		result += chars.charAt(Math.random()*62)
+	}
+	return result
 }
 
 // Do not change the code below.
